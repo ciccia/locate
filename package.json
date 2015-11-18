@@ -7,11 +7,16 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ciccia/locate.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-mocha": "^2.0.0"
   },
   "author": "",
   "license": "ISC",

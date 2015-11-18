@@ -6,15 +6,10 @@ You can run tests with mocha
 ### Installation
 
 ```sh
-$ npm install --global mocha
+$ npm install
 ```
 ### Run
 
 ```sh
-$ npm test
-```
-or
-
-```sh
-$ mocha
+$ gulp
 ```

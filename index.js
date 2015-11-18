@@ -1,16 +1,15 @@
-(function() {
-    'use strict';
+(function () {
 
-    let locate = function(values, lookingFor) {
-        if (values.indexOf(lookingFor) != -1) {
-            return true
-        }
-
-        return values.some(function(value) {
-            return Array.isArray(value) && locate(value, lookingFor);
-        })
+  var locate = function (values, lookingFor) {
+    if (values.indexOf(lookingFor) !== -1) {
+      return true;
     }
 
-    module.exports = locate;
+    return values.some(function (value) {
+      return Array.isArray(value) && locate(value, lookingFor);
+    });
+  };
 
-})()
+  module.exports = locate;
+
+})();
